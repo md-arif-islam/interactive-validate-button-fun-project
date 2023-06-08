@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moving validation button</title>
+    <title>Moving validation button</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <form action="#">
+        <label for="f-name">First Name</label>
+        <input type="text" name="f-name" id="f-name" />
+
+        <label for="l-name">Last Name</label>
+        <input type="text" name="l-name" id="l-name" />
+
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" autocomplete="off" />
+        <input type="email" name="email" id="email" />
 
         <label for="password">Password</label>
         <input type="password" name="password" id="password" />
-        <p id="password-validation-text"></p> <!-- Added password validation text element -->
+        <p id="password-validation-text"></p>
 
         <input type="submit" value="Submit" id="submit" />
     </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 
